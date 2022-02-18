@@ -24,6 +24,7 @@
 .icon{
     width: 60px;
     height: 60px;
+    margin-right: 10px;
 }
 .Titulo h6{
     margin: 0%;
@@ -86,7 +87,7 @@ ul {
     font-size: 15px;
 }
 li::before { /* Añadimos contenido antes de cada elemento de la lista */
-    content: "⮞"; /* Insertamos el marcador */
+    content: "▸"; /* Insertamos el marcador */
     padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
     color: rgb(51, 51, 51); /* Coloreamos la viñeta */
     }
