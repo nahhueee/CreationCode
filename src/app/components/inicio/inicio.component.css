@@ -1,0 +1,84 @@
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.over h5{
+    color: white;
+    font-family: "CaviarDreams";
+    font-size: 40px;
+}
+.over hr{
+    border-top: 1px solid #ffe600;
+}
+.puntos{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.puntos img{
+    width: 70px;
+    height: 15px;
+}
+
+@media only screen and (max-width: 991px){
+    .over h5{
+        font-size: 25px;
+        text-align: center;
+    }
+    .cont{
+        padding: 50px;
+    }
+}
+
+.nosotros p{
+    color: rgb(75, 75, 75);
+    font-family: "Asap-Regular";
+    white-space: pre-line;
+    margin-top: 15px;
+}
+.img1{
+    width: 80%;
+}
+
+
+.back-portafolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: no-repeat center rgba(19, 19, 19, 0.514);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    background-blend-mode: multiply;
+
+}
+.portafolio{
+    color: white;
+    text-align: center;
+}
+
+.portafolio h5{
+    font-size: 35px;
+    font-family: "Amaranth-Regular";
+    margin-bottom: 0%;
+}
+.portafolio p{
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+.portafolio button{
+    width: 200px;
+}
+.btn i{
+    margin-right: 5px;
+}

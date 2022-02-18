@@ -1,0 +1,189 @@
+<div class="container">
+    <h6 class="titulo">Herramientas y lenguajes utilizados</h6>
+    <hr class="hrDivisor">
+
+    <ngx-slick-carousel class="carousel" 
+    #slickModal="slick-carousel" 
+    [config]="slideConfig" 
+    >
+    <div ngxSlickItem *ngFor="let herramienta of Herramientas" class="slide">
+        <a target="blank">
+            <div class="slide-img">
+            <img [src]="herramienta.img" class="card-img-top">
+        </div>
+        </a>
+    </div>
+    </ngx-slick-carousel>
+
+    <br>
+    <h6 class="titulo">Trabajos realizados y caracteristicas</h6>
+    <hr class="hrDivisor">
+    <div class="info">
+        <h6>Click sobre las imagenes para interactuar</h6>
+    </div>
+
+
+    <div class="Titulo">
+        <img class="icon" src="assets/otros/sales.png" alt="sales icon">
+        <h6>Sistemas de gestión de stock y ventas</h6> 
+    </div>
+
+    <!-- Ventas -->
+    <br>
+    <div class="row">
+        <div class="col-12 col-md-8 feedback-slides">
+            <div class="client-feedback">
+                <ngx-slick-carousel 
+                    class="carousel feedback" 
+                    #slickModal="slick-carousel" 
+                    [config]="imagesSlider">
+                    <div id="container-imgGrande" ngxSlickItem *ngFor="let sImg of SalesImgs; let i = index" class="slide">
+                           <a href="{{ sImg.img }}" data-lightbox="salesbox"><img class="imgGrande" src="{{ sImg.img }}" alt="" width="100%"></a> 
+                            
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="client-thumbnails">
+                <ngx-slick-carousel 
+                class="carousel thumbs" 
+                #slickModal="slick-carousel" 
+                [config]="thumbnailsSlider ">
+                <div id="container-imgPequeña" ngxSlickItem *ngFor="let sImg of SalesImgs" class="slide">
+                    <img class="imgPequeña" src="{{ sImg.img }}" alt="" width="100%">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+
+            <div class="detalles">
+                <div class="subtitulo">
+                    <h6>Caracteristicas</h6>
+                    <hr>
+                </div>
+               
+
+                
+                <ul class="lista">
+                    <li>Estadisticas de ventas por periodos</li>
+                    <li>Administracion de cajas, ventas, extracciones, pagos</li>
+                    <li>Impresión de etiquetas con codigos de barra</li>
+                    <li>Registros de clientes y deudas</li>
+                    <li>Gestión de inventario, listas de faltantes</li>
+                    <li>Diseños personalizados</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <div class="Titulo">
+        <img class="icon" src="assets/otros/resto.png" alt="resto icon">
+        <h6>Sistemas para restaurantes y casas de comida</h6> 
+    </div>
+    <!-- Resto -->
+    <br>
+    <div class="row">
+
+
+        
+        <div class="col-12 col-md-8 feedback-slides">
+            <div class="client-feedback">
+                <ngx-slick-carousel 
+                    class="carousel feedback2" 
+                    #slickModal="slick-carousel" 
+                    [config]="imagesSlider2">
+                    <div id="container-imgGrande" ngxSlickItem *ngFor="let sImg of RestoImgs; let i = index" class="slide">
+                           <a href="{{ sImg.img }}" data-lightbox="restobox"><img class="imgGrande" src="{{ sImg.img }}" alt="" width="100%"></a> 
+                            
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="client-thumbnails">
+                <ngx-slick-carousel 
+                class="carousel thumbs2" 
+                #slickModal="slick-carousel" 
+                [config]="thumbnailsSlider2 ">
+                <div id="container-imgPequeña" ngxSlickItem *ngFor="let sImg of RestoImgs" class="slide">
+                    <img class="imgPequeña" src="{{ sImg.img }}" alt="" width="100%">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+
+            <div class="detalles">
+                <div class="subtitulo">
+                    <h6>Caracteristicas</h6>
+                    <hr>
+                </div>
+               
+
+                
+                <ul class="lista">
+                    <li>Estadisticas de pedidos por periodos</li>
+                    <li>Administracion de repartos realizados y por realizar</li>
+                    <li>Impresión de comandas</li>
+                    <li>Facturación Electronica</li>
+                    <li>Gestión de inventario, listas de faltantes</li>
+                    <li>Impresión de cartas, generador QR</li>
+                    <li>Administracion de pedidos por mesas</li>
+                    <li>Aplicación movil para mozos</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="Titulo">
+        <img class="icon" src="assets/otros/web.png" alt="resto icon">
+        <h6>Webs estaticas e interactivas</h6> 
+    </div>
+    <!-- web -->
+    <br>
+    <div class="row">
+
+
+        
+        <div class="col-12 col-md-8 feedback-slides">
+            <div class="client-feedback">
+                <ngx-slick-carousel 
+                    class="carousel feedback3" 
+                    #slickModal="slick-carousel" 
+                    [config]="imagesSlider3">
+                    <div id="container-imgGrande" ngxSlickItem *ngFor="let sImg of WebImgs; let i = index" class="slide">
+                           <a href="{{ sImg.img }}" data-lightbox="websbox"><img class="imgGrande" src="{{ sImg.img }}" alt="" width="100%"></a> 
+                            
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="client-thumbnails">
+                <ngx-slick-carousel 
+                class="carousel thumbs3" 
+                #slickModal="slick-carousel" 
+                [config]="thumbnailsSlider3 ">
+                <div id="container-imgPequeña" ngxSlickItem *ngFor="let sImg of WebImgs" class="slide">
+                    <img class="imgPequeña" src="{{ sImg.img }}" alt="" width="100%">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+
+            <div class="detalles">
+                <div class="subtitulo">
+                    <h6>Link</h6>
+                    <hr>
+                </div>
+                <a class="link" href="https://valleserrano.ar/" target="_blank">valleserrano.ar</a>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+</div>

@@ -1,0 +1,98 @@
+.info{
+    text-align: center;
+    margin: 20px 0px;
+}
+.info h6{
+    padding: 10px;
+    border: 2px solid #ffe600;
+    font-family: "Poppins-Regular";
+    color: rgb(44, 44, 44);
+    background-color:#e7e7e7;
+}
+
+
+.Titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+}
+.Titulo h6{
+    margin: 0%;
+}
+
+
+/* imagenes */
+    .feedback-slides{ padding-right: 0%;}
+    .imgGrande{ height: 450px; transition: ease 0.5s;}
+
+    #container-imgPequeña{height: 100px;}
+    .imgPequeña{cursor: pointer; height:100px; margin: 0px 3px;}
+    .imgPequeña:hover{filter:brightness(70%);}
+
+    @media only screen and (max-width: 1200px){
+        .imgGrande{ height: 350px;}
+        #container-imgPequeña, .imgPequeña{height: 60px;}}
+    @media only screen and (max-width: 500px){
+        .imgGrande{ height: 250px;}
+        #container-imgPequeña, .imgPequeña{height: 80px;}}
+    @media only screen and (max-width: 768px){
+            .feedback-slides{ padding-right: 15px;}
+            }
+
+    #galeryColContainer{ padding: 5px;}    
+    #itemGaleria :hover{ filter:brightness(90%) }
+    #itemGaleria{ transition: .5s ease-in-out; margin: 0%;}
+    #itemGaleria img{ margin: 0%; height: 100%;}
+    #imgPrincipalGalery{ padding: 0%;}    
+
+    .imgGrande:hover{
+        filter:brightness(70%);
+        cursor: zoom-in;
+    }
+
+
+.detalles{
+    margin-top: 25px;
+}
+.subtitulo{
+    text-align: center;
+}
+.subtitulo h6{
+    font-family: "Poppins-Regular";
+    color: rgb(44, 44, 44);
+}
+.subtitulo hr{
+    border-top: 1px solid #ffe600;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+.lista li{
+    color: rgb(68, 68, 68);
+    font-family: "Asap-Regular";
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+li::before { /* Añadimos contenido antes de cada elemento de la lista */
+    content: "⮞"; /* Insertamos el marcador */
+    padding-right: 8px; /* Establecemos el espacio entre las viñetas y el list item */
+    color: rgb(51, 51, 51); /* Coloreamos la viñeta */
+    }
+
+.link{
+    color: rgb(68, 68, 68);
+    font-family: "Asap-Regular";
+    margin-left: 20px;
+}

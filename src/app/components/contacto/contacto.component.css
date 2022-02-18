@@ -1,0 +1,61 @@
+.back-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: no-repeat center rgba(19, 19, 19, 0.514);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 250px;
+    background-blend-mode: multiply;
+
+}
+
+.banner{
+    color: white;
+    text-align: center;
+}
+
+.banner h5{
+    font-size: 35px;
+    font-family: "Amaranth-Regular";
+    margin-bottom: 0%;
+}
+.banner p{
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+}
+
+.datos{
+    margin-bottom: 35px;
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+.campo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(31, 31, 31);
+    margin-bottom: 5px;
+}
+.campo p{
+    font-size: 18px;
+    margin: 0%;
+    margin-left: 8px;
+    font-family: "Poppins-Regular";
+}
+
+.wpp{
+    margin-bottom: 20px;
+    background-color: #008d47;
+    width: 300px;
+}
+.wpp:hover{
+    background-color: #272727;
+}
+.wpp i{
+    margin-right: 8px;
+}
